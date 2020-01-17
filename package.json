@@ -1,11 +1,11 @@
 {
-  "name": "homebridge-marantz-volume",
+  "name": "homebridge-marantz-volume-jw",
   "version": "1.6.3",
   "description": "Homebridge plugin to control Denon or Marantz receiver volume with Siri commands",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/robertvorthman/homebridge-marantz-volume.git"
+    "url": "git://github.com/jeffwilcox/homebridge-marantz-volume.git"
   },
   "keywords": [
     "homebridge",
