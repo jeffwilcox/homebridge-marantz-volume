@@ -31,12 +31,12 @@ function ReceiverVolume(log, config) {
         return;
     }
 
-    if (this.zone < 1 && this.zone > 2) {
-        this.log.warn('Zone number is not recognized (must be 1 or 2); assuming zone 1');
+    if (this.zone < 1 && this.zone > 3) {
+        this.log.warn('Zone number is not recognized (must be 1, 2 or 3); assuming zone 1');
         this.zone = 1;
     }
 
-    this.zoneName = this.zone === 1 ? "MainZone" : "Zone2";
+    this.zoneName = this.zone === 1 ? "MainZone" : (this.zone === 3 ? "Zone3" : "Zone2");
 
     if (!this.controlPower) {
         this.fakePowerState = 1; //default to on so that brightness will update in HomeKit apps
