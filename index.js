@@ -6,7 +6,7 @@ var Service, Characteristic;
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
-    homebridge.registerAccessory("homebridge-marantz-volume", "marantz-volume", ReceiverVolume);
+    homebridge.registerAccessory("homebridge-marantz-volume-jw", "marantz-volume-jw", ReceiverVolume);
 }
 
 function ReceiverVolume(log, config) {
